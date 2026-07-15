@@ -1,0 +1,20 @@
+[
+  {
+    "file_type": "ssh",
+    "pattern": "PermitRootLogin yes",
+    "issue": "Root Login Enabled Over SSH",
+    "mitre_id": "T1078.001",
+    "technique": "Valid Accounts: Default Accounts",
+    "severity": "High",
+    "remediation": "Locate 'PermitRootLogin' in your configuration file and change the value to 'no'."
+  },
+  {
+    "file_type": "ssh",
+    "pattern": "PasswordAuthentication yes",
+    "issue": "Password Authentication Enabled",
+    "mitre_id": "T1110",
+    "technique": "Brute Force",
+    "severity": "Medium",
+    "remediation": "Enforce key-based authentication by changing 'PasswordAuthentication' to 'no'."
+  }
+]
